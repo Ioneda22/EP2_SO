@@ -1,5 +1,7 @@
-import entities.Reader;
-import entities.Writer;
+package noSolution;
+
+import noSolution.entities.Reader;
+import noSolution.entities.Writer;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;

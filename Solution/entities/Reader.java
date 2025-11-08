@@ -1,16 +1,16 @@
-package entities;
+package Solution.entities;
 
 import java.util.List;
 import java.util.concurrent.locks.Lock;
 
-public class Writer extends Worker {
+public class Reader extends Worker {
 
-    public Writer(List<String> base, Lock lock) {
+    public Reader(List<String> base, Lock lock) {
         super(base, lock);
     }
 
     @Override
     public void work(int position) {
-        base.set(position, "MODIFICADO");
+        String word = base.get(position);
     }
 }
