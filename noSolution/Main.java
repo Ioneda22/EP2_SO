@@ -28,8 +28,6 @@ public class Main {
 
             writer.println("Readers,Writers,Time(ms)");
 
-            System.out.println("Iniciando experimento 'NoSolution'. Salvando em: " + _csvOutputPath);
-
             for (int i = 0; i < _numOfProportions; i++) {
                 int numOfReaders = i;
                 int numOfWriters = (_numOfProportions - 1) - numOfReaders;
