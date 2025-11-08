@@ -4,11 +4,12 @@ import java.io.IOException;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
+
 import utils.ArchiveReader;
 
 public class Main {
 
-    private final static Path _filePath  = Path.of("utils/bd.txt");
+    private final static Path _filePath = Path.of("utils/bd.txt");
 
     public static void main(String[] args) {
         try {

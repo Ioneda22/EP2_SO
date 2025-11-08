@@ -2,6 +2,7 @@ package noSolution;
 
 import noSolution.entities.Reader;
 import noSolution.entities.Writer;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -24,10 +25,10 @@ public class NoSolution {
     public long solve() {
         List<Runnable> runnables = new ArrayList<>();
 
-        for(int i = 0; i < _numOfReaders; i++) {
+        for (int i = 0; i < _numOfReaders; i++) {
             runnables.add(new Reader(_base, _lock));
         }
-        for(int i = 0; i < _numOfWriters; i++) {
+        for (int i = 0; i < _numOfWriters; i++) {
             runnables.add(new Writer(_base, _lock));
         }
 
