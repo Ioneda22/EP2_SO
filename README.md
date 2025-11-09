@@ -94,6 +94,3 @@ As implementações dos mecanismos de concorrência foram baseadas nos conceitos
   `https://www.geeksforgeeks.org/operating-systems/readers-writers-problem-set-1-introduction-and-readers-preference-solution/`
 
 <!-- end list -->
-
-```
-```
