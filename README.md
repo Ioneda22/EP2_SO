@@ -1,15 +1,4 @@
-# EP2 - Comparação de Desempenho: Leitores e Escritores
-
-Este projeto compara o desempenho de duas implementações para um mesmo problema: gerir o acesso de múltiplas *threads* a um recurso partilhado.
-
-O objetivo é ver, na prática, a diferença entre uma solução que usa um bloqueio simples (onde só um acede de cada vez) e uma solução mais inteligente que implementa o problema clássico de **Leitores e Escritores** (onde vários leitores podem aceder ao mesmo tempo).
-
-As duas abordagens são:
-
-1.  **`noSolution`**: Usa um `ReentrantLock` simples. Só uma *thread* (leitor ou escritor) entra na "região crítica" de cada vez.
-2.  **`Solution`**: Usa Semáforos para implementar a política de **Prioridade dos Leitores**. Vários leitores podem aceder ao recurso ao mesmo tempo, mas um escritor precisa de esperar que todos os leitores saiam.
-
-O programa testa 101 proporções diferentes (de 0 Leitores/100 Escritores até 100 Leitores/0 Escritores), executa cada proporção 50 vezes e guarda o tempo médio nos ficheiros `.csv` dentro da pasta `output/`.
+# EP2 - Leitores e Escritores
 
 ## Estrutura do Projeto
 
